@@ -9,6 +9,6 @@ public class SimpleController : ControllerBase
     [HttpGet]
     public string GetData()
     {
-        return "X Matthew Watson";
+        return "Matthew Watson";
     }
 }
