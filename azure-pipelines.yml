@@ -33,4 +33,4 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
     testSelector: 'testAssemblies'
-    testAssemblyVer2: '**\SimpleAPI.Tests.dll'
+    testAssemblyVer2: '**\bin\Release\net6.0\SimpleAPI.Tests.dll'
