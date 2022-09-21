@@ -2,12 +2,16 @@ using SimpleAPI.Controllers;
 
 namespace SimpleAPI.Tests;
 
-public class UnitTest1
+public class UnitTests
 {
     [Fact]
-    public void Test1()
+    public void GetData_with_param_returns_param()
     {
-
+        for (int i = 1; i <= 5; ++i)
+        {
+            var actual = _controller.GetData(i);
+            Assert.Equal(i, actual);
+        }
     }
 
     [Fact]

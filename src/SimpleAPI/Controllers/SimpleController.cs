@@ -6,9 +6,15 @@ namespace SimpleAPI.Controllers;
 [Route("api/simple")]
 public class SimpleController : ControllerBase
 {
-    [HttpGet]
+    [HttpGet] // GET api/simple
     public string GetData()
     {
         return "Matthew Watson";
+    }
+
+    [HttpGet("{id}")] // GET api/simple/5
+    public int GetData(int id)
+    {
+        return id;
     }
 }
